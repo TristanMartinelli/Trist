@@ -1,53 +1,6 @@
-@keyframes smoothNeonRotation {
-    0%   { background-position: 0% 50%; }
-    50%  { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
-}
-
-body {
-    margin: 0;
-    height: 100vh;
-    font-family: 'Arial', sans-serif;
-    color: #fff; 
-
-    background: linear-gradient(45deg, #ff00cc, #ff6600, #ff00ff, #00ffff);
-    background-size: 200% 200%;
-    animation: smoothNeonRotation 10s infinite;
-}
 h1 {
-    font-family: 'Permanent Marker', cursive;
-    font-size: 3em;
-    color: #FFF;
-    background: #222; /* Dark background for contrast */
-    padding: 20px;
-    text-shadow:
-        3px 3px 0px rgba(255, 0, 0, 0.7),    /* Red shadow */
-        6px 6px 0px rgba(0, 255, 0, 0.7),    /* Green shadow */
-        -3px -3px 0px rgba(0, 0, 255, 0.7);  /* Blue shadow */
-    letter-spacing: 2px;
-    position: relative;
-    overflow: hidden;
-}
-
-/* Optional: Simulate some spray paint drips */
-h1::before {
-    content: '...';
-    position: absolute;
-    bottom: -10px;
-    left: 30px;
-    font-size: 40px;
-    color: #FFF;
-    transform: rotate(-5deg);
-}
-
-h1::after {
-    content: '...';
-    position: absolute;
-    bottom: -10px;
-    right: 50px;
-    font-size: 40px;
-    color: #FFF;
-    transform: rotate(5deg);
+    font-size: 100px;
+    text-align: center;
 }
 img {
   height: 200px;
