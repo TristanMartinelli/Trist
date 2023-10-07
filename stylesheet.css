@@ -15,10 +15,39 @@ body {
     animation: smoothNeonRotation 10s infinite;
 }
 h1 {
-  font-size: 100px;
-  text-align: center; 
-  background-image: url("https://live.staticflickr.com/2780/4188517246_eda930657a_c.jpg")
-    
+    font-family: 'Permanent Marker', cursive;
+    font-size: 3em;
+    color: #FFF;
+    background: #222; /* Dark background for contrast */
+    padding: 20px;
+    text-shadow:
+        3px 3px 0px rgba(255, 0, 0, 0.7),    /* Red shadow */
+        6px 6px 0px rgba(0, 255, 0, 0.7),    /* Green shadow */
+        -3px -3px 0px rgba(0, 0, 255, 0.7);  /* Blue shadow */
+    letter-spacing: 2px;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Optional: Simulate some spray paint drips */
+h1::before {
+    content: '...';
+    position: absolute;
+    bottom: -10px;
+    left: 30px;
+    font-size: 40px;
+    color: #FFF;
+    transform: rotate(-5deg);
+}
+
+h1::after {
+    content: '...';
+    position: absolute;
+    bottom: -10px;
+    right: 50px;
+    font-size: 40px;
+    color: #FFF;
+    transform: rotate(5deg);
 }
 img {
   height: 200px;
