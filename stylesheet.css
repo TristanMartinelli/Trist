@@ -2,45 +2,6 @@ h1 {
     font-size: 100px;
     text-align: center;
 }
-body {
-    background-color: black;
-    overflow: hidden;
-}
-
-.smoke {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(255, 255, 255, 0.1);
-    pointer-events: none;
-    z-index: -1;
-}
-
-@keyframes smoke-animation {
-    0% {
-        transform: translateY(-50%) translateX(-50%) scale(1);
-        opacity: 0.4;
-    }
-    100% {
-        transform: translateY(-200%) translateX(-50%) scale(2);
-        opacity: 0;
-    }
-}
-
-.smoke::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 50%;
-    width: 100px;
-    height: 100px;
-    background: rgba(255, 255, 255, 0.4);
-    border-radius: 50%;
-    transform-origin: 50% 50%;
-    animation: smoke-animation 5s infinite;
-}
 img {
   height: 200px;
   width: 200px;
