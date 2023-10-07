@@ -1,17 +1,18 @@
-@keyframes neonAlternatingBackground {
-    0%   { background: linear-gradient(45deg, #ff00cc, #ff6600); } /* Neon Pink to Neon Orange */
-    25%  { background: linear-gradient(45deg, #ff6600, #ff00ff); } /* Neon Orange to Neon Purple */
-    50%  { background: linear-gradient(45deg, #ff00ff, #00ffff); } /* Neon Purple to Neon Cyan */
-    75%  { background: linear-gradient(45deg, #00ffff, #ff00cc); } /* Neon Cyan to Neon Pink */
-    100% { background: linear-gradient(45deg, #ff00cc, #ff6600); } /* Back to Neon Pink to Neon Orange */
+@keyframes smoothNeonRotation {
+    0%   { background-position: 0% 50%; }
+    50%  { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
 }
 
 body {
-    animation: neonAlternatingBackground 10s infinite; /* 10s can be adjusted for faster/slower transitions */
     margin: 0;
     height: 100vh;
     font-family: 'Arial', sans-serif;
-    color: #fff;
+    color: #fff; 
+
+    background: linear-gradient(45deg, #ff00cc, #ff6600, #ff00ff, #00ffff);
+    background-size: 200% 200%;
+    animation: smoothNeonRotation 10s infinite;
 }
 h1 {
   font-size: 100px;
