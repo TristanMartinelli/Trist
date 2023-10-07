@@ -17,6 +17,7 @@ h1 {
   font-size: 100px;
   text-align: center; 
   background-image: url="https://live.staticflickr.com/2780/4188517246_eda930657a_c.jpg" alt"image not available"
+    z-index: 1;
 }
 img {
   height: 200px;
