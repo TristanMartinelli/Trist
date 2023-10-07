@@ -13,3 +13,7 @@ h2, h3, h4, h5 {
   font-size: 50px;
   font-weight: bold;
 }
+
+caption {
+  font-weight: bold;
+}
