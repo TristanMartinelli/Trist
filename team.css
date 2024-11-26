@@ -1,0 +1,47 @@
+#home {
+    color: white;
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    border: 3px solid white;
+    border-radius: 40px;
+
+}
+
+body {
+    background-color: bisque;
+}
+
+h1 {
+    text-align: center;
+    border: 3px solid red; /* Red border */
+        border-radius: 15px; /* Rounded corners */
+        padding: 10px 20px; /* Add some space inside the border */
+        color: white; /* Text color */
+        text-align: center; /* Center-align the text */
+        background-color: black; /* Background behind the text */
+        box-shadow: 0 0 15px red, 0 0 30px red; /* Neon glow effect */
+        font-family: Arial, sans-serif; /* Font style */
+}
+
+li {
+    text-align: center;
+    list-style-position: inside; }
+
+   /* Custom styling for GronkSmasher */
+#GronkSmasher img {
+    width: 100px;
+    height: 100px;
+    vertical-align: middle;
+    margin-right: 10px; /* Add spacing between image and text */
+    border-radius: 20px;
+}
+
+ul {
+    list-style: none;
+}
+
+#GronkSmasher {
+    font-size: 30px;
+    font-weight: bold;
+}
